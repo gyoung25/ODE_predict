@@ -129,5 +129,33 @@ The above summary tables show that the models trained on different features with
 
 ![image](https://github.com/user-attachments/assets/39bcfa84-4ea2-476b-b4ad-d3e7be5ec818)
 
-The model with class weighting does a **much** worse job at estimating probabilities -- it predicts that everyone has a ~50% chance of passing. This isn't necessarily an issue for a simple classifier, but it makes a probability-generating model useless. We'll use the model without class weighting.
+The model with class weighting does a **much** worse job at estimating probabilities -- it predicts that everyone has a ~50% chance of passing. This isn't necessarily an issue for a simple classifier, but it makes a probability-generating model useless. **I will consequently use the models without class weighting.**
+
+## Results visualization
+
+Here are example visualizations from the 1- and 2-feature models:
+
+1-feature model:
+![image](https://github.com/user-attachments/assets/6941d2ec-e0e6-4a44-a4fd-aaf9131de74c)
+
+2-feature model:
+![image](https://github.com/user-attachments/assets/0d339847-e5cf-4fec-ae5f-dc6656eedb99)
+
+### Another perspective
+
+I will also find the ten most comparable students in the dataset to the input grades and display each of their outcomes in a table, as follows:
+
+|    | Weighted Avg | Passed |
+|----|--------------|--------|
+| 1	 | 0.680208     | Yes    |
+| 2	 | 0.683333	    | Yes    |
+| 3	 | 0.696667	    | Yes    |
+| 4	 | 0.697083	    | Yes    |
+| 5	 | 0.697917	    | Yes    |
+| 6	 | 0.700833	    | Yes    |
+| 7	 | 0.712917	    | No     |
+| 8	 | 0.717014	    | Yes   |
+| 9	 | 0.717157	    | Yes    |
+| 10 | 0.718333	    | No     |
+
 
