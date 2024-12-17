@@ -146,6 +146,7 @@ I will also find the ten most comparable students in the dataset to the input gr
 <table>
 <tr><th>Table 1 Heading 1 </th><th>Table 1 Heading 2</th></tr>
 <tr><td>
+    
 |    | Weighted Avg | Passed |
 |----|--------------|--------|
 | 1	 | 0.680208     | Yes    |
