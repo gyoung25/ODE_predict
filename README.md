@@ -182,7 +182,7 @@ I will also find the ten most comparable students in the dataset to the input gr
     <td><b style="font-size:30px"><ins>2-feature model:</ins></b></td>
  </tr>
  <tr>
-    <td>Lorem ipsum ...</td>
+    <td>![image](https://github.com/user-attachments/assets/6941d2ec-e0e6-4a44-a4fd-aaf9131de74c)</td>
     <td>Lorem ipsum ...</td>
  </tr>
 </table>
