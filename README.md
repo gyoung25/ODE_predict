@@ -67,16 +67,34 @@ We can also visualize pass/fail as a function of both midterm 1 and the quiz ave
 
 ## Training models
 
+A logistic regression model was trained on a subset of 174 datapoints consisting of early-semester grades and course outcomes (pass/fail).
 
-For logistic regression classifier trained on ['Midterm1', 'Quiz Avg'] with no class weighting:
+Because the classes (pass/fail) are fairly imbalanced, I will train the models with and without [class weighting](https://scikit-learn.org/1.5/modules/generated/sklearn.linear_model.LogisticRegression.html).
+
+1. For logistic regression classifier trained on ['Midterm1', 'Quiz Avg'] with no class weighting:
 Classification report:
 
 |                 | precision | recall  | f1-score | support |
 |-----------------|-----------|---------|----------|-------- |               
-|           0     |  0.88     |   0.70  |   0.78   |   10    |
-|           1     |  0.92     |   0.97  |   0.94   |   34    |
+|        Fail     |  0.88     |   0.70  |   0.78   |   10    |
+|        Pass     |  0.92     |   0.97  |   0.94   |   34    |
 |    accuracy     |           |         |   0.91   |   44    |
 |   macro_avg     |  0.90     |   0.84  |   0.86   |   44    |
 | weighted_avg    |  0.91     |   0.91  |   0.91   |   44    |
 
 ROC_AUC score: 0.941
+
+2. For logistic regression classifier trained on ['Midterm1', 'Quiz Avg'] with *balanced* class weighting:
+Classification report:
+
+|                 | precision | recall  | f1-score | support |
+|-----------------|-----------|---------|----------|-------- |               
+|        Fail     |  0.56     |   0.90  |   0.69   |   10    |
+|        Pass     |  0.96     |   0.79  |   0.87   |   34    |
+|    accuracy     |           |         |   0.82   |   44    |
+|   macro_avg     |  0.76     |   0.85  |   0.78   |   44    |
+| weighted_avg    |  0.87     |   0.82  |   0.83   |   44    |
+
+ROC_AUC score: 0.932
+
+**Note**: The balanced class weighting increased the recall (true positive rate) among samples in the minority class (fail). This is expected.
