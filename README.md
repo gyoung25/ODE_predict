@@ -47,4 +47,24 @@ Let's limit our search to these three explanatory variables. Next, we'll calcula
 | Midterm1 | 20.651488|
 | Quiz Avg | 16.926606|
 
+The VIF values suggest that the three variables are highly correlated and we only need one of them in a logistic regression model.
+Instead of using only one category of grade, I'll instead use the weighted course average 0.1*(HW Avg) + 0.25*(Quiz Avg) + 0.65*Midterm1.
+### Grade distributions
+
 ![image](https://github.com/user-attachments/assets/80fca629-0bca-4b48-aa90-a26cd627f3e2)
+
+Data is quite imbalanced; should set class_weight to 'balanced' in logistic regression models
+
+### Visualize pass/fail as a function of individual features
+
+![image](https://github.com/user-attachments/assets/07d84108-1407-499c-9b84-44c4953b2c8b)
+
+HW Avg does not seem to be a good predictor of student success in this course. This makes sense, since HW is grade for completion only and consequently does not provide a good indication if a student understand the material. Weighted Avg seems to separate the two outcomes the best of the four.
+
+We can also visualize pass/fail as a function of both midterm 1 and the quiz average:
+
+![image](https://github.com/user-attachments/assets/8913b892-db1f-43d2-b686-53fdb485c8a8)
+
+## Training models
+
+
