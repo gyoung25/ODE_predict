@@ -19,7 +19,9 @@ The final course letter grade for each student is stored as a target variable fo
 
 ## Exploratory Data Analysis
 
-### Correlation:
+### Correlation
+
+Let's look at the feature correlation matrix:
 
 |          |       HW1 |       HW2 |       HW3 |        HW4 |   HW Avg |     Quiz1 |      Quiz2 |     Quiz3 |   Quiz Avg |   Midterm1 |     Pass |
 |:---------|----------:|----------:|----------:|-----------:|---------:|----------:|-----------:|----------:|-----------:|-----------:|---------:|
@@ -35,7 +37,10 @@ The final course letter grade for each student is stored as a target variable fo
 | Midterm1 | 0.0314292 | 0.0442056 | 0.110683  |  0.0835274 | 0.096318 | 0.326459  |  0.365008  | 0.482089  |  0.524909  |  1         | 0.661899 |
 | Pass     | 0.12574   | 0.216727  | 0.131569  |  0.169171  | 0.231919 | 0.315997  |  0.364305  | 0.360789  |  0.470391  |  0.661899  | 1        |
 
-  
+From the above correlation matrix, it seems HW Avg, Quiz Avg, and Midterm1 correlate most with the target variable Pass.
+
+Let's limit our search to these three explanatory variables. Next, we'll calculate the [variance inflation factor](https://en.wikipedia.org/wiki/Variance_inflation_factor) (VIF) of there variables to determine if we need all of them.
+
 | Feature  | VIF      |
 | -------- | -------  |
 | HW Avg   |15.618070 |
