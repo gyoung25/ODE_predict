@@ -58,6 +58,7 @@ st.write('''### **Important information**:
 - The point of this tool is to give you a sense of how students with similar early-semester performance have done in the course to help you make a decision about withdrawing from the course.
 - No matter the generated probability, *you are not guaranteed to pass or fail this course.* Your success in the course is dependent on how much effort you put in.
 - This is only intended to be used by students in Dr. Glenn Young's Math 2306 course at Kennesaw State University. The model will not give meaningful results to students in other classes.
+- Detailed information about this model is available on my GitHub [here](https://github.com/gyoung25/ODE_predict/blob/main/README.md).
 ''')
 
 st.write('''## **How to use**:
