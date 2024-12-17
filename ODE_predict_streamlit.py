@@ -15,7 +15,7 @@ warnings.filterwarnings('ignore')
 ##################### Prepare data ############################
 
 #Import data and choose predictors
-grade_data = pd.read_excel('/Users/gyoung19/Library/CloudStorage/OneDrive-KennesawStateUniversity/Python/ODE_Predict/Grade_data/ODE_Grade_Data.xlsx')
+grade_data = pd.read_excel('/Grade_data/ODE_Grade_Data.xlsx')
 
 #Keep only early grade data
 early_data = grade_data[['Semester', 'HW1', 'HW2', 'HW3', 'HW4', 'Quiz1', 'Quiz2', 'Quiz3', 'Midterm1', 'Course_Grade']]
