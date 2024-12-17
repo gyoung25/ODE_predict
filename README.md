@@ -178,7 +178,7 @@ I will also find the ten most comparable students in the dataset to the input gr
 
 1-feature model            |  2-feature model
 :-------------------------:|:-------------------------:
-![image](https://github.com/user-attachments/assets/6941d2ec-e0e6-4a44-a4fd-aaf9131de74c)  | ![image](https://github.com/user-attachments/assets/6941d2ec-e0e6-4a44-a4fd-aaf9131de74c)
+![image](https://github.com/user-attachments/assets/6941d2ec-e0e6-4a44-a4fd-aaf9131de74c)  | ![image](https://github.com/user-attachments/assets/0d339847-e5cf-4fec-ae5f-dc6656eedb99)
 
 
 
