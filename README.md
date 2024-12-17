@@ -71,12 +71,12 @@ We can also visualize pass/fail as a function of both midterm 1 and the quiz ave
 For logistic regression classifier trained on ['Midterm1', 'Quiz Avg'] with no class weighting:
 Classification report:
 
-               precision    recall  f1-score   support
-
-           0       0.88      0.70      0.78        10
-           1       0.92      0.97      0.94        34
-    accuracy       0.00      0.00      0.91        44
-   macro_avg       0.90      0.84      0.86        44
-weighted_avg       0.91      0.91      0.91        44
+|                 | precision | recall  | f1-score | support |
+|-----------------|-----------|---------|----------|-------- |               
+|           0     |  0.88     |   0.70  |   0.78   |   10    |
+|           1     |  0.92     |   0.97  |   0.94   |   34    |
+|    accuracy     |           |         |   0.91   |   44    |
+|   macro_avg     |  0.90     |   0.84  |   0.86   |   44    |
+| weighted_avg    |  0.91     |   0.91  |   0.91   |   44    |
 
 ROC_AUC score: 0.941
