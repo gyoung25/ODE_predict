@@ -1,7 +1,5 @@
 numpy
 pandas
-math
 matplotlib
 streamlit
 sklearn
-warnings
