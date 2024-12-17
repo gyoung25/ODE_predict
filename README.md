@@ -86,15 +86,48 @@ Classification report:
 
 2. For logistic regression classifier trained on ['Midterm1', 'Quiz Avg'] with *balanced* class weighting:
 Classification report:
-  
-  |                 | precision | recall  | f1-score | support |
-  |-----------------|-----------|---------|----------|-------- |               
-  |        Fail     |  0.56     |   0.90  |   0.69   |   10    |
-  |        Pass     |  0.96     |   0.79  |   0.87   |   34    |
-  |    accuracy     |           |         |   0.82   |   44    |
-  |   macro_avg     |  0.76     |   0.85  |   0.78   |   44    |
-  | weighted_avg    |  0.87     |   0.82  |   0.83   |   44    |
-  
-  ROC_AUC score: 0.932
+      
+      |                 | precision | recall  | f1-score | support |
+      |-----------------|-----------|---------|----------|-------- |               
+      |        Fail     |  0.56     |   0.90  |   0.69   |   10    |
+      |        Pass     |  0.96     |   0.79  |   0.87   |   34    |
+      |    accuracy     |           |         |   0.82   |   44    |
+      |   macro_avg     |  0.76     |   0.85  |   0.78   |   44    |
+      | weighted_avg    |  0.87     |   0.82  |   0.83   |   44    |
+      
+      ROC_AUC score: 0.932
   
   **Note**: The balanced class weighting increased the recall (true positive rate) among samples in the minority class (fail). This is expected.
+
+3. For logistic regression classifier trained on ['Weighted Avg'] with no class weighting:
+Classification report:
+    
+    |                 | precision | recall  | f1-score | support |
+    |-----------------|-----------|---------|----------|-------- |               
+    |        Fail     |  1.00     |   0.70  |   0.82   |   10    |
+    |        Pass     |  0.92     |   1.00  |   0.96   |   34    |
+    |    accuracy     |           |         |   0.93   |   44    |
+    |   macro_avg     |  0.96     |   0.85  |   0.89   |   44    |
+    | weighted_avg    |  0.94     |   0.93  |   0.93   |   44    |
+  
+    ROC_AUC score: 0.956
+
+4. For logistic regression classifier trained on ['Weighted Avg'] with *balanced* class weighting:
+Classification report:
+      
+      |                 | precision | recall  | f1-score | support |
+      |-----------------|-----------|---------|----------|-------- |               
+      |        Fail     |  0.56     |   0.90  |   0.69   |   10    |
+      |        Pass     |  0.96     |   0.79  |   0.87   |   34    |
+      |    accuracy     |           |         |   0.82   |   44    |
+      |   macro_avg     |  0.76     |   0.85  |   0.78   |   44    |
+      | weighted_avg    |  0.87     |   0.82  |   0.83   |   44    |
+      
+      ROC_AUC score: 0.956
+
+The above summary tables show that the models trained on different features with and without weighting perform similarly. Class weighting helps the model detect more students at risk of failing. Of course, the point of this model isn't strictly *classification*, but to generate *probabilities) of success. Let's look at the probability of the 1D (weighted average) model:
+
+![image](https://github.com/user-attachments/assets/39bcfa84-4ea2-476b-b4ad-d3e7be5ec818)
+
+The model with class weighting does a **much** worse job at estimating probabilities -- it predicts that everyone has a ~50% chance of passing. This isn't necessarily an issue for a simple classifier, but it makes a probability-generating model useless. We'll use the model without class weighting.
+
