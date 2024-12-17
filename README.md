@@ -176,5 +176,15 @@ I will also find the ten most comparable students in the dataset to the input gr
 |  10 |   0.7      |   0.666667 | Yes      |
 
 
+<div class="row">
+  <div class="column">
+    <h2><ins>1-feature model:</ins></h2>
+    <p>Some text..</p>
+  </div>
+  <div class="column">
+    <h2><ins>2-feature model:</ins></h2>
+    <p>Some text..</p>
+  </div>
+</div>
 
 
