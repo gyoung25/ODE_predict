@@ -17,3 +17,4 @@ The final course letter grade for each student is stored as a target variable fo
 
 **Important**: Dataset only includes grade data from students who finished the semester. Students who withdrew from the course are excluded.
 
+![image](https://github.com/user-attachments/assets/80fca629-0bca-4b48-aa90-a26cd627f3e2)
