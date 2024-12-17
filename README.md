@@ -176,15 +176,46 @@ I will also find the ten most comparable students in the dataset to the input gr
 |  10 |   0.7      |   0.666667 | Yes      |
 
 
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+
+<h2>Two Equal Columns</h2>
+
 <div class="row">
   <div class="column">
-    <h2><ins>1-feature model:</ins></h2>
+    <h2>Column 1</h2>
     <p>Some text..</p>
   </div>
   <div class="column">
-    <h2><ins>2-feature model:</ins></h2>
+    <h2>Column 2</h2>
     <p>Some text..</p>
   </div>
 </div>
+
+</body>
+</html>
 
 
