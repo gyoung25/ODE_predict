@@ -73,28 +73,28 @@ Because the classes (pass/fail) are fairly imbalanced, I will train the models w
 
 1. For logistic regression classifier trained on ['Midterm1', 'Quiz Avg'] with no class weighting:
 Classification report:
+  
+  |                 | precision | recall  | f1-score | support |
+  |-----------------|-----------|---------|----------|-------- |               
+  |        Fail     |  0.88     |   0.70  |   0.78   |   10    |
+  |        Pass     |  0.92     |   0.97  |   0.94   |   34    |
+  |    accuracy     |           |         |   0.91   |   44    |
+  |   macro_avg     |  0.90     |   0.84  |   0.86   |   44    |
+  | weighted_avg    |  0.91     |   0.91  |   0.91   |   44    |
 
-|                 | precision | recall  | f1-score | support |
-|-----------------|-----------|---------|----------|-------- |               
-|        Fail     |  0.88     |   0.70  |   0.78   |   10    |
-|        Pass     |  0.92     |   0.97  |   0.94   |   34    |
-|    accuracy     |           |         |   0.91   |   44    |
-|   macro_avg     |  0.90     |   0.84  |   0.86   |   44    |
-| weighted_avg    |  0.91     |   0.91  |   0.91   |   44    |
-
-ROC_AUC score: 0.941
+  ROC_AUC score: 0.941
 
 2. For logistic regression classifier trained on ['Midterm1', 'Quiz Avg'] with *balanced* class weighting:
 Classification report:
-
-|                 | precision | recall  | f1-score | support |
-|-----------------|-----------|---------|----------|-------- |               
-|        Fail     |  0.56     |   0.90  |   0.69   |   10    |
-|        Pass     |  0.96     |   0.79  |   0.87   |   34    |
-|    accuracy     |           |         |   0.82   |   44    |
-|   macro_avg     |  0.76     |   0.85  |   0.78   |   44    |
-| weighted_avg    |  0.87     |   0.82  |   0.83   |   44    |
-
-ROC_AUC score: 0.932
-
-**Note**: The balanced class weighting increased the recall (true positive rate) among samples in the minority class (fail). This is expected.
+  
+  |                 | precision | recall  | f1-score | support |
+  |-----------------|-----------|---------|----------|-------- |               
+  |        Fail     |  0.56     |   0.90  |   0.69   |   10    |
+  |        Pass     |  0.96     |   0.79  |   0.87   |   34    |
+  |    accuracy     |           |         |   0.82   |   44    |
+  |   macro_avg     |  0.76     |   0.85  |   0.78   |   44    |
+  | weighted_avg    |  0.87     |   0.82  |   0.83   |   44    |
+  
+  ROC_AUC score: 0.932
+  
+  **Note**: The balanced class weighting increased the recall (true positive rate) among samples in the minority class (fail). This is expected.
