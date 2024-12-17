@@ -3,7 +3,7 @@
 ## Data description
 Early-semester grade data collected over (at least) five semesters of Math 2306 students at Kennesaw State University.
 Data include (for each student):
-- Semester
+- Semester (semester labels reindexed to avoid possible FERPA violation)
 - Four homework sets
 - Three quizzes
 - One midterm
