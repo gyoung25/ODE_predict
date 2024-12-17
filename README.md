@@ -176,8 +176,6 @@ I will also find the ten most comparable students in the dataset to the input gr
 |  10 |   0.7      |   0.666667 | Yes      |
 
 
-<html>
-<head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 * {
@@ -215,7 +213,5 @@ I will also find the ten most comparable students in the dataset to the input gr
   </div>
 </div>
 
-</body>
-</html>
 
 
