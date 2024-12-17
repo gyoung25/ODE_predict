@@ -144,7 +144,7 @@ Here are example visualizations from the 1- and 2-feature models:
 I will also find the ten most comparable students in the dataset to the input grades and display each of their outcomes in a table, as follows:
 
 <table>
-<tr><th>Table 1 Heading 1 </th><th>Table 1 Heading 2</th></tr>
+<tr><th><ins>1-feature model:</ins> </th><th><ins>2-feature model:</ins></th></tr>
 <tr><td>
     
 |    | Weighted Avg | Passed |
@@ -162,7 +162,7 @@ I will also find the ten most comparable students in the dataset to the input gr
 
 </td><td>
     
-<ins>2-feature model:</ins>
+
 |    |   Midterm1 |   Quiz Avg | Passed   |
 |---:|-----------:|-----------:|:---------|
 |  1 |   0.666667 |   0.6      | Yes      |
