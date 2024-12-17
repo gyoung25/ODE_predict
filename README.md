@@ -135,19 +135,17 @@ The model with class weighting does a **much** worse job at estimating probabili
 
 Here are example visualizations from the 1- and 2-feature models:
 
-<ins>1-feature model:</ins>
-
-![image](https://github.com/user-attachments/assets/6941d2ec-e0e6-4a44-a4fd-aaf9131de74c)
-
-<ins>2-feature model:</ins>
-
-![image](https://github.com/user-attachments/assets/0d339847-e5cf-4fec-ae5f-dc6656eedb99)
+1-feature model            |  2-feature model
+:-------------------------:|:-------------------------:
+![image](https://github.com/user-attachments/assets/6941d2ec-e0e6-4a44-a4fd-aaf9131de74c)  | ![image](https://github.com/user-attachments/assets/0d339847-e5cf-4fec-ae5f-dc6656eedb99)
 
 ### Another perspective
 
 I will also find the ten most comparable students in the dataset to the input grades and display each of their outcomes in a table, as follows:
 
-<ins>1-feature model:</ins>
+<table>
+<tr><th>Table 1 Heading 1 </th><th>Table 1 Heading 2</th></tr>
+<tr><td>
 |    | Weighted Avg | Passed |
 |----|--------------|--------|
 | 1	 | 0.680208     | Yes    |
@@ -161,6 +159,8 @@ I will also find the ten most comparable students in the dataset to the input gr
 | 9	 | 0.717157	    | Yes    |
 | 10 | 0.718333	    | No     |
 
+</td><td>
+    
 <ins>2-feature model:</ins>
 |    |   Midterm1 |   Quiz Avg | Passed   |
 |---:|-----------:|-----------:|:---------|
@@ -175,10 +175,7 @@ I will also find the ten most comparable students in the dataset to the input gr
 |  9 |   0.6      |   0.533333 | No       |
 |  10 |   0.7      |   0.666667 | Yes      |
 
-
-1-feature model            |  2-feature model
-:-------------------------:|:-------------------------:
-![image](https://github.com/user-attachments/assets/6941d2ec-e0e6-4a44-a4fd-aaf9131de74c)  | ![image](https://github.com/user-attachments/assets/0d339847-e5cf-4fec-ae5f-dc6656eedb99)
+</td></tr> </table>
 
 
 
