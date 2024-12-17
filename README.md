@@ -135,16 +135,17 @@ The model with class weighting does a **much** worse job at estimating probabili
 
 Here are example visualizations from the 1- and 2-feature models:
 
-<ins>1-feature model:<\ins>
+<ins>1-feature model:</ins>
 ![image](https://github.com/user-attachments/assets/6941d2ec-e0e6-4a44-a4fd-aaf9131de74c)
 
-2-feature model:
+<ins>2-feature model:</ins>
 ![image](https://github.com/user-attachments/assets/0d339847-e5cf-4fec-ae5f-dc6656eedb99)
 
 ### Another perspective
 
 I will also find the ten most comparable students in the dataset to the input grades and display each of their outcomes in a table, as follows:
 
+<ins>1-feature model:</ins>
 |    | Weighted Avg | Passed |
 |----|--------------|--------|
 | 1	 | 0.680208     | Yes    |
@@ -157,5 +158,20 @@ I will also find the ten most comparable students in the dataset to the input gr
 | 8	 | 0.717014	    | Yes   |
 | 9	 | 0.717157	    | Yes    |
 | 10 | 0.718333	    | No     |
+
+<ins>2-feature model:</ins>
+|    |   Midterm1 |   Quiz Avg | Passed   |
+|---:|-----------:|-----------:|:---------|
+|  1 |   0.425926 |   0.331944 | No       |
+|  2 |   0.388889 |   0.251944 | No       |
+|  3 |   0.375    |   0.233333 | No       |
+|  4 |   0.352941 |   0.366667 | No       |
+|  5 |   0.333333 |   0.233333 | No       |
+|  6 |   0.416667 |   0.4      | No       |
+|  7 |   0.479167 |   0.233333 | No       |
+|  8 |   0.435897 |   0.4      | No       |
+|  9 |   0.541667 |   0.4      | No       |
+|  10 |   0.407407 |   0.498611 | No       |
+
 
 
