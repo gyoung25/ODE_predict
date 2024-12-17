@@ -135,7 +135,7 @@ The model with class weighting does a **much** worse job at estimating probabili
 
 Here are example visualizations from the 1- and 2-feature models:
 
-1-feature model:
+<ins>1-feature model:<\ins>
 ![image](https://github.com/user-attachments/assets/6941d2ec-e0e6-4a44-a4fd-aaf9131de74c)
 
 2-feature model:
