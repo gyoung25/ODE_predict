@@ -1,5 +1,7 @@
 # Math 2306: ODE Early-Semester Grade Analysis and Course Success Prediction
 
+### Streamlit app: [https://ode-predict.streamlit.app/](https://ode-predict.streamlit.app/)
+
 ## Data description
 Early-semester grade data collected over (at least) five semesters of Math 2306 students at Kennesaw State University.
 Data include (for each student):
