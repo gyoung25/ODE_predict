@@ -24,12 +24,12 @@ def model_train(X, y, features_list, balance = None):
 
 
     lr = LogisticRegression(class_weight=balance,random_state=0)
-    params = {'C':[0.00001, 0.0001, 0.001, 0.01, 0.1, 1, 10]}#, 'gamma':[0.00001, 0.0001, 0.001, 0.01, 0.1, 1, 10]} 
+    #params = {'C':[0.00001, 0.0001, 0.001, 0.01, 0.1, 1, 10]}#, 'gamma':[0.00001, 0.0001, 0.001, 0.01, 0.1, 1, 10]} 
 
-    clf = GridSearchCV(lr, params, scoring = 'accuracy')
-    clf.fit(X[features_list], y)
+    #clf = GridSearchCV(lr, params, scoring = 'accuracy')
+    lr.fit(X[features_list], y)
 
-    return clf.best_estimator_
+    return lr
 
     
 def find_closest_1D(new_weighted_avg, num_closest, X_weighted_avg, y):
