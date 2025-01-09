@@ -127,7 +127,7 @@ Classification report:
       
       ROC_AUC score: 0.956
 
-The above summary tables show that the models trained on different features with and without weighting perform similarly. Class weighting helps the model detect more students at risk of failing. Of course, the point of this model isn't strictly *classification*, but to generate *probabilities) of success. Let's look at the probability of the 1D (weighted average) model:
+The above summary tables show that the models trained on different features with and without weighting perform similarly. Class weighting helps the model detect more students at risk of failing. Of course, the point of this model isn't strictly *classification*, but to generate *probabilities* of success. Let's look at the probability of the 1D (weighted average) model:
 
 ![image](https://github.com/user-attachments/assets/bef013d7-cea1-4e02-a085-eb1546e97d43)
 
